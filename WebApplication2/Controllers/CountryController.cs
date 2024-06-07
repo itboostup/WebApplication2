@@ -7,5 +7,10 @@ namespace WebApplication2.Controllers
     [ApiController]
     public class CountryController : ControllerBase
     {
+        [HttpGet]
+        public IActionResult Message()
+        {
+            return Ok("Sample Mmessage");
+        }
     }
 }
